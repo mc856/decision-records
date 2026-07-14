@@ -1,0 +1,9 @@
+{
+  "name": "decision-records",
+  "version": "0.1.0",
+  "description": "Decision records for the delegation era — DECISIONS.md: ratified, append-only, falsifiable decisions with provenance. Case law for humans working with AI agents.",
+  "author": {
+    "name": "Jun",
+    "url": "https://github.com/mc856"
+  }
+}
