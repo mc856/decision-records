@@ -69,6 +69,22 @@ overturned by an independent design audit — the supersede chains are left visi
 - regret-when: promoted lines outgrow one line, or provenance questions become frequent
 - review: 2026-10-13
 
+### D-260712-interrupt-budget — Proactive capture limited to one mid-session interruption
+- status: active
+- decided-by: user-ratified (Claude recommended)
+- alternatives: record only when told to / propose whenever a decision is noticed
+- reasoning@constraints: interruption cost is superlinear — alert fatigue then uninstall is the first cause of death for recording systems; zero proactivity misses the highest-value samples (model defaults slipping through unratified)
+- regret-when: within two weeks, proposal acceptance rate <1/3, or clear misses of significant decisions
+- review: 2026-07-26
+
+### D-260712-backtest-over-evals — Real-transcript backtesting instead of synthetic eval cases
+- status: active
+- decided-by: user-decided (overrode the model's plan: 4 synthetic cases + control group + review page)
+- alternatives: synthetic eval loop per the skill-creator workflow
+- reasoning@constraints: historical transcripts are free real data whose extraction quality is directly human-checkable; synthetic cases have poor cost-benefit for a single-user private skill
+- regret-when: the skill is distributed to other users (reproducible regression tests become valuable again) — fired 2026-07-13: the repo was published; assess at review
+- review: 2026-07-20
+
 ## Archive
 
 ### D-260712-two-tier-entries — Full entries plus one-line quick entries
