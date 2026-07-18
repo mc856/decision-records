@@ -16,7 +16,7 @@ Execution got cheap; judgment is the bottleneck. This skill turns judgment into 
 1. Default: `DECISIONS.md` at the repo root. **When creating it, also add one registration line to the repo's AGENTS.md (or CLAUDE.md):** "Before significant changes, read the Active section of DECISIONS.md. Follow its protocol header when editing it." Without this line, passing agents cannot discover the ledger.
 2. **Defer to existing homes.** If the project already keeps decision records (an ADR directory like `docs/decisions/`, an initiative `decisions.md`), point there and follow the existing format — never create a second ledger. The useful additions are usually just the fields those formats lack: decided-by, regret-when, review.
 3. **Decisions follow the project, not the folder.** Multi-repo projects keep one ledger (in a designated primary repo or an external state directory); member repos carry a one-line pointer in their instruction files.
-4. If the user runs a cross-project state layer (e.g. the project-portfolio skill), honor its per-project `decisions:` pointer field, and register the monthly review as a standing trigger in its watchlist. Without a state layer, reviews are user-invoked ("review my decisions") — say so honestly when setting up.
+4. If the user keeps project progress documents (a cross-project tracker, per-project status notes — any system), offer to note the ledger's location there, and if that system supports standing reminders, register the monthly review with it. This is opportunistic integration, not a dependency — the ledger works standalone. Without such a system, reviews are user-invoked ("review my decisions") — say so honestly when setting up.
 
 ## What counts as a decision
 
@@ -56,7 +56,7 @@ Do not record: reversible implementation details, or **conventions** (commit sty
 
 ## Workflow: review
 
-Monthly (via the state layer's standing trigger, or when the user asks):
+Monthly (via a standing reminder if one was registered, or when the user asks):
 
 1. Collect entries with `review <= today`. Score each — **right / wrong / too early to tell** — with one line of real evidence. Extend too-early entries one cycle.
 2. Update statuses; move non-active entries to Archive. If Active exceeds ~20 entries, walk them down one by one (expire, supersede, or re-confirm with the user) — no merging, no rewriting.
