@@ -85,6 +85,14 @@ overturned by an independent design audit — the supersede chains are left visi
 - regret-when: the skill is distributed to other users (reproducible regression tests become valuable again) — fired 2026-07-13: the repo was published; assess at review
 - review: 2026-07-20
 
+### D-260719-selfrepo-review-gate — Semantic pushes to own public skill repos get a pre-push review
+- status: active
+- decided-by: user-ratified (user flagged the gap; Claude drafted the rule)
+- alternatives: no gate (maintainer-less pushes ship consistency bugs — a dangling cross-reference in SKILL.md shipped exactly this way and was caught by accident) / review every push including typos (ritual; alert fatigue)
+- reasoning@constraints: own repos pushed straight to main have no maintainer gate, so a pre-push self-review is the only gate; the repos are public products whose audience is sensitive to AI-sounding prose; scope = semantic changes to SKILL.md, README, SPEC, templates; focus = cross-file consistency, prose tells, claims matching implementation; one-line typo/metadata changes exempt
+- regret-when: the gate finds nothing on three consecutive runs, or it deters small legitimate improvements
+- review: 2026-09-19
+
 ### D-260718-oneshot-distribution — Distribution capped at one-shot channel setup, not sustained growth
 - status: active
 - decided-by: user-ratified (Claude recommended)
