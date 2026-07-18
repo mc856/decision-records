@@ -85,6 +85,14 @@ overturned by an independent design audit — the supersede chains are left visi
 - regret-when: the skill is distributed to other users (reproducible regression tests become valuable again) — fired 2026-07-13: the repo was published; assess at review
 - review: 2026-07-20
 
+### D-260718-oneshot-distribution — Distribution capped at one-shot channel setup, not sustained growth
+- status: active
+- decided-by: user-ratified (Claude recommended)
+- alternatives: defer all promotion until the probe review (probes never get the minimum exposure needed to produce readings) / sustained growth operations (violates the pre-validation no-growth-investment discipline recorded in the private ledger)
+- reasoning@constraints: a demand probe needs minimum exposure to read anything; scope fixed to one round of channel setup (skills.sh telemetry seeding, awesome-list PRs, one post per channel) plus feedback collection; metric verdicts stay with the monthly probe batch and the three-probe review
+- regret-when: a second round of proactive distribution effort is spent before the 2026-08-15 review
+- review: 2026-08-15
+
 ## Archive
 
 ### D-260712-two-tier-entries — Full entries plus one-line quick entries
