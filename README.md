@@ -75,7 +75,7 @@ npx skills add mc856/decision-records
 **Codex (manual):**
 
 ```bash
-git clone https://github.com/mc856/decision-records /tmp/dr && cp -r /tmp/dr/skills/decision-records ~/.codex/skills/
+git clone https://github.com/mc856/decision-records /tmp/dr && cp -r /tmp/dr/skills/decision-records ~/.agents/skills/
 ```
 
 **Claude Cowork:** download `decision-records.skill` from [Releases](https://github.com/mc856/decision-records/releases) and drop it into a chat — it installs via the "Save skill" button.
