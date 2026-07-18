@@ -45,7 +45,7 @@ Every file carries a protocol header, so any agent — any vendor, no install �
 
 ## Why not ADR?
 
-This *is* the decision-record tradition (ADR, MADR), extended for the delegation era. What's new: **decided-by** (was this ratified, or did a model default slip through?), **regret conditions** (decisions that can expire), **review dates** (decisions that get scored). It coexists with ADRs — if your repo already has `docs/decisions/`, keep it canonical; this format defers to existing homes rather than founding a second one.
+This *is* the decision-record tradition (ADR, MADR), extended for the delegation era. What's new: **decided-by** (was this ratified, or did a model default slip through?), **regret conditions** (decisions that can expire), **review dates** (decisions that get scored). ADRs are also architecture-scoped; a DECISIONS.md isn't — a job search or any long-running non-code effort can keep one the same way. It coexists with ADRs — if your repo already has `docs/decisions/`, keep it canonical; this format defers to existing homes rather than founding a second one.
 
 ## Why not memory?
 
